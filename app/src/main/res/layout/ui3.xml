@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Vols esborrar tot l'historial?"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:text="SI"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/si"
+        android:onClick="si"/>
+
+    <Button
+        android:text="NO"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/no"
+        android:onClick="no"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/textView"
+        android:maxLines="10"
+        android:ellipsize="marquee"
+        />
+
+    <Button
+        android:text="Retorna"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="retorna"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Escollir operació"
+        android:id="@+id/num" />
+
+    <Button
+        android:text="Esborra historial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrar"
+        android:onClick="borrar"
+        />
+</LinearLayout>

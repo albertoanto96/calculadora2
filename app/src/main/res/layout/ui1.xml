@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ui1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dsa.eetac.upc.edu.calculadora2.Ui1Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduïu 2 valors numerics enters i una operació, després cliqueu a 'Resultat'"
+        />
+
+    <TextView
+        android:text="Resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="@color/relleno"
+        android:id="@+id/text1"
+        android:layout_above="@+id/result"
+        android:layout_alignStart="@+id/text2"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="@color/relleno"
+        android:id="@+id/text2"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="Resultado"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:text="Esborrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/esborrar"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:onClick="esborrar"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:checkedButton="@+id/suma"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true">
+
+        <RadioButton android:id="@+id/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_above="@+id/resta"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp" />
+
+        <RadioButton android:id="@+id/divi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_alignBottom="@+id/text2"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton android:id="@+id/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_above="@+id/multi"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="Historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/historial"
+        android:onClick="historial"
+        android:layout_below="@+id/esborrar"
+        android:layout_alignEnd="@+id/button" />
+
+</RelativeLayout>
