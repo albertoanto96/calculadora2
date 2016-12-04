@@ -39,7 +39,6 @@ public class Ui1Activity extends AppCompatActivity {
     public void onResume() {
         super.onResume();  // Always call the superclass method first
         try {
-            System.out.println("Entra");
             Bundle extra = getIntent().getExtras();
             String ex=extra.getString("borra");
             if (ex == "ok") {
